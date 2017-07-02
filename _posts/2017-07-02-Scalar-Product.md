@@ -23,10 +23,7 @@ pl.legend()
 
 ![png]({{ site.url }}{{ site.baseurl }}/images/Scalar-Product/scalar_product_1_1.png)
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Scalar-Product/scalar_product_1_1.png" alt="">
-
-
-# formula for projected vector
+# Formula for projected vector
 $$ v_{1 proj} = \frac{v_1}{\|v_1\|} \cdot \|v_{1 proj}\| $$ (direction of old vector, make unit length, multiply with own length)  
 $$ \|v_{1 proj}\| = cos(\alpha) \|v_2\| $$ (by Pythagoras, $$\alpha$$ angle between $$v_1$$ and $$v_2$$)  
 together:  
