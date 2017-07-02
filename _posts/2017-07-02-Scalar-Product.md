@@ -21,7 +21,7 @@ pl.plot([0, v2_proj[0]], [0, v2_proj[1]], label='v2 proj')
 pl.legend()
 ```
 
-![png](/_posts/scalar_product_1_1.png)
+![png](/_posts/images/Scalar-Product/scalar_product_1_1.png)
 
 
 # formula for projected vector
