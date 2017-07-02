@@ -2,9 +2,9 @@
 main:
   - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About"
+  #- title: "About"
   #  url: https://cafischer.github.io/about/
-  - title: "Posts"
+  #- title: "Posts"
   #  url: https://cafischer.github.io/posts/
   # - title: "Sample Collections"
   #   url: /collection-archive/
