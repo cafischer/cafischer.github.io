@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "Caroline Fischer"
-  avatar           : "cafischer.github.io/images/passbild.png"
+  avatar           : "/images/passbild.png"
   bio              : "PhD Student of Computational Neuroscience"
   location         : "Munich"
   email            :
