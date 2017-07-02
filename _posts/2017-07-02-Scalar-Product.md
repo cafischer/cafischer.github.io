@@ -21,14 +21,6 @@ pl.plot([0, v2_proj[0]], [0, v2_proj[1]], label='v2 proj')
 pl.legend()
 ```
 
-
-
-
-    <matplotlib.legend.Legend at 0xac7dff4c>
-
-
-
-
 ![png](/_posts/scalar_product_1_1.png)
 
 
