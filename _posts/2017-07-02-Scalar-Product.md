@@ -24,7 +24,7 @@ pl.legend()
 ![png]({{ site.url }}{{ site.baseurl }}/_posts/images/Scalar-Product/scalar_product_1_1.png)
 
 <dl>
-<img src="{{ site.url }}{{ site.baseurl }}/_posts/images/Scalar-Product/scalar_product_1_1.png" alt="" class="full">
+<img src="{{ site.url }}{{ site.baseurl }}/_posts/images/Scalar-Product/scalar_product_1_1.png" alt="">
 </dl>
 
 
