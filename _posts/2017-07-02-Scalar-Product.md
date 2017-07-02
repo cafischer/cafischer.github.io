@@ -23,6 +23,10 @@ pl.legend()
 
 ![png]({{ site.url }}{{ site.baseurl }}/_posts/images/Scalar-Product/scalar_product_1_1.png)
 
+<dl>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/filename.jpg" alt="" class="full">
+</dl>
+
 
 # formula for projected vector
 $$ v_{1 proj} = \frac{v_1}{\|v_1\|} \cdot \|v_{1 proj}\| $$ (direction of old vector, make unit length, multiply with own length)  
