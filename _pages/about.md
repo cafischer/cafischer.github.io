@@ -7,4 +7,4 @@ header:
 ---
 
 Link to my CV:
-[Link to a file]({{ site.baseurl }}{% link /assets/files/doc.pdf %})
+[Link to a file]({{ site.baseurl }}{% link /assets/pdfs/CV.pdf %})
