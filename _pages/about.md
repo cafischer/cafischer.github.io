@@ -6,5 +6,4 @@ header:
   overlay_image: /assets/images/donkey1.jpg
 ---
 
-Link to my CV:
-[Link to a file]({{ site.baseurl }}{% link /assets/pdfs/CV.pdf %})
+[See my CV]({{ site.baseurl }}{% link /assets/pdfs/CV.pdf %})
