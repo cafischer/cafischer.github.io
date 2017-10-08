@@ -17,7 +17,7 @@ Now lets try to use this definition to derive the formula for the ZAP stimulus.
 Formular for the linear increasing frequency:  
 $$ f(t) = f_0 + \frac{f_1 - f_0}{T} \cdot t $$  
 $$ \begin{equation}
-f(t) = f_0 + \frac{f_1 - f_0}{T} \cdot t \tag{abc}\label{eq:one}
+f(t) = f_0 + \frac{f_1 - f_0}{T} \cdot t \label{eq:one}
 \end{equation} $$
 Formular for the phase which will be used as argument for the sine (rearranging the definition of the instantaneous frequency):  
 $$ \frac{\delta \phi}{\delta t} = 2 \pi \cdot f(t) $$  
