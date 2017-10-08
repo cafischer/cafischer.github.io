@@ -4,7 +4,7 @@ category: Physics
 
 For periodic signals the frequency is simply defined as the number of repeats per unit time or 1 over the period duration:  
 $$ f = \frac{1}{T} $$  
-But what if the frequency changes over time? Take as an example the ZAP stimulus shown in figure 1 that is used in neuronscience to investigate resonance properties of neurons. The ZAP stimulus is defined as a sinusoid that has a frequency which increases linearly in time.  
+But what if the frequency changes over time? Take as an example the ZAP stimulus shown in figure 1 that is used in neuronscience to investigate resonance properties of neurons. The ZAP stimulus is defined as a sinusoid that has a frequency which increases linear with time.  
 
 ![png]({{ site.url }}{{ site.baseurl }}/images/Instantaneous-Frequency/ZAP_stimulus.png)
 Figure 1: The ZAP stimulus.  
