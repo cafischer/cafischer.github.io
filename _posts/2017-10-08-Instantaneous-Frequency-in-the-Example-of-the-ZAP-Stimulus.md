@@ -15,12 +15,16 @@ So instead of the coarse grained definition of 1 period per period duration we n
 
 Now lets try to use this definition to derive the formula for the ZAP stimulus.  
 Formular for the linear increasing frequency:  
-$$ \begin{equation} f(t) = f_0 + \frac{f_1 - f_0}{T} \cdot t \end{equation} $$  
+$$ \begin{align} f(t) &= f_0 + \frac{f_1 - f_0}{T} \cdot t \end{align} $$  
 Formular for the phase which will be used as argument for the sine (rearranging the definition of the instantaneous frequency):  
 $$ \frac{\delta \phi}{\delta t} = 2 \pi \cdot f(t) $$ (2)  
 Insert (1) in (2):  
 $$ \frac{\delta \phi}{\delta t} = 2 \pi \cdot f_0 + \frac{f_1 - f_0}{T} \cdot t $$ (3)  
 Integrate:  
-$$ \phi(t) = 2 \pi \int^t_0 f_0 + \frac{f_1 - f_0}{T} \cdot \tau \delta\tau = 2 \pi [f_0 \tau + \frac{1}{2} \frac{f_1 - f_0}{T} \cdot \tau^2]^t_0 = 2 \pi (f_0 \cdot t + \frac{1}{2} \frac{f_1 - f_0}{T} \cdot t^2) $$ (4)  
+$$ \begin{align}
+\phi(t) &= 2 \pi \int^t_0 f_0 + \frac{f_1 - f_0}{T} \cdot \tau \delta\tau 
+&= 2 \pi [f_0 \tau + \frac{1}{2} \frac{f_1 - f_0}{T} \cdot \tau^2]^t_0 
+&= 2 \pi (f_0 \cdot t + \frac{1}{2} \frac{f_1 - f_0}{T} \cdot t^2) 
+\end{align} $$ 
 Thus, the formula for the ZAP stimulus is:  
 $$ ZAP(t) = \sin(2 \pi (f_0 \cdot t + \frac{1}{2} \frac{f_1 - f_0}{T} \cdot t^2)) $$ (5)  
