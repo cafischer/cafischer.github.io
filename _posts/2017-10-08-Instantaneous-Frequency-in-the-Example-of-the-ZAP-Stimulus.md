@@ -9,8 +9,8 @@ But what if the frequency changes over time? Take as an example the ZAP stimulus
 ![png]({{ site.url }}{{ site.baseurl }}/images/Instantaneous-Frequency/ZAP_stimulus.png)
 Figure 1: The ZAP stimulus.  
 
-To derive the formula for the ZAP stimulus we need a definition of frequency as a function of time - the instantaneous frequency. The instantaneous frequency is defined as the derivative of the phase (point at which you are in your period) divided by the total period (usually $$ 2 \pi $$).  
-$$ f(t) = \frac{\delta \phi}{\delta t} \cdot \frac{1}{\pi} $$  
+To derive the formula for the ZAP stimulus we need a definition of frequency as a function of time - the instantaneous frequency. The instantaneous frequency is defined as the derivative of the phase (point at which you are in your period usually defined in radians) divided by the total period (correspondingly $$ 2 \pi $$).  
+$$ f(t) = \frac{\delta \phi}{\delta t} \cdot \frac{1}{2 \pi} $$  
 So instead of the coarse grained slope of 1 period per period duration we now have the slope defined as derivative that is part of the period per infinitely small time bin.  
 
 Now lets try to use this definition to derive the formula for the ZAP stimulus.  
