@@ -28,10 +28,10 @@ $$ \begin{equation}
 \end{equation} $$  
 Integrate:  
 $$ \begin{equation}
-\phi(t) = 2 \pi \int^t_0 f_0 + \frac{f_1 - f_0}{T} \cdot \tau \delta\tau
+\phi(t) = 2 \pi \int^t_0 f_0 + \frac{f_1 - f_0}{T} \cdot \tau \delta\tau \tag{}
 \end{equation} $$  
 $$ \begin{equation}
-= 2 \pi [f_0 \tau + \frac{1}{2} \frac{f_1 - f_0}{T} \cdot \tau^2]^t_0
+= 2 \pi [f_0 \tau + \frac{1}{2} \frac{f_1 - f_0}{T} \cdot \tau^2]^t_0 \tag{}
 \end{equation} $$  
 $$ \begin{equation}
 = 2 \pi (f_0 \cdot t + \frac{1}{2} \frac{f_1 - f_0}{T} \cdot t^2) \tag{4}
