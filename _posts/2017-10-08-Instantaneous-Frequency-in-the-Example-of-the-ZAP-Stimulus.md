@@ -1,5 +1,5 @@
 ---
-category: Neuroscience, Physics
+category: [Neuroscience, Physics]
 ---
 
 For periodic signals the frequency is simply defined as the number of repeats per unit time or 1 over the period duration:  
