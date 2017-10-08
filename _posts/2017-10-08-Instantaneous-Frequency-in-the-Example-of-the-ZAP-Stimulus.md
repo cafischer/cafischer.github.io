@@ -28,15 +28,15 @@ $$ \begin{equation}
 \end{equation} $$  
 Integrate:  
 $$ \begin{equation}
-\phi(t) = 2 \pi \int^t_0 f_0 + \frac{f_1 - f_0}{T} \cdot \tau \delta\tau \tag{}
+\phi(t) = 2 \pi \int^t_0 f_0 + \frac{f_1 - f_0}{T} \cdot \tau \delta\tau \tag{4}
 \end{equation} $$  
 $$ \begin{equation}
-= 2 \pi [f_0 \tau + \frac{1}{2} \frac{f_1 - f_0}{T} \cdot \tau^2]^t_0 \tag{}
+\phi(t) = 2 \pi [f_0 \tau + \frac{1}{2} \frac{f_1 - f_0}{T} \cdot \tau^2]^t_0 \tag{5}
 \end{equation} $$  
 $$ \begin{equation}
-= 2 \pi (f_0 \cdot t + \frac{1}{2} \frac{f_1 - f_0}{T} \cdot t^2) \tag{4}
+\phi(t) = 2 \pi (f_0 \cdot t + \frac{1}{2} \frac{f_1 - f_0}{T} \cdot t^2) \tag{6}
 \end{equation} $$  
 Thus, the formula for the ZAP stimulus is:  
 $$ \begin{equation}
-ZAP(t) = \sin(2 \pi (f_0 \cdot t + \frac{1}{2} \frac{f_1 - f_0}{T} \cdot t^2)) \tag{5}
+ZAP(t) = \sin(2 \pi (f_0 \cdot t + \frac{1}{2} \frac{f_1 - f_0}{T} \cdot t^2)) \tag{7}
 \end{equation} $$  
