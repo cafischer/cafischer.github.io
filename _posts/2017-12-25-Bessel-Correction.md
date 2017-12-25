@@ -2,7 +2,6 @@
 category: Statistics
 ---
 
-# Bessel Correction or why to use n-1 instead of n as divisor for the variance
 Statistics are always based on a sample drawn from a larger population. But the sample drawn may not be the best representative of the whole population so that a statistic, for instance the mean of the sample, may deviate from the population mean. This is ok as long as - on average - we are getting it right.
 The expected value of the mean is indead the same as the population mean (see proof 1). But for the variance this is not the case! The expected value of the sample variance underestimates the population variance if the sample mean is used for the calculation (see proof 2).
 The intuition is simple: The variance is defined as the average squared deviation from the mean. But the sample mean is by definition the point where the summed deviations are minimal (see proof 3). The deviations to the population mean therefore have to be equal or greater than the deviations to the sample mean. 
