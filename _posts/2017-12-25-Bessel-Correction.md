@@ -1,5 +1,6 @@
 ---
 category: Statistics
+title: "Bessel Correction or why to use n-1 instead of n as divisor for the variance"
 ---
 
 Statistics are always based on a sample drawn from a larger population. But the sample drawn may not be the best representative of the whole population so that a statistic, for instance the mean of the sample, may deviate from the population mean. This is ok as long as - on average - we are getting it right.
