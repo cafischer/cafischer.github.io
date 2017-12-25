@@ -119,7 +119,7 @@ $$\begin{align}
 $$\begin{align}
 E[\hat{\sigma}^2] &= E\left[\frac{1}{n} \sum_i^n{X_i^2} - \left(\frac{1}{n} \sum_i^nX_i \right)^2\right] \\
 &= \frac{1}{n} \sum_i^n E[X_i^2] - \frac{1}{n^2} E\left[\sum_i^nX_i \cdot \sum_j^nX_j\right] \\
-&= \frac{1}{n} \sum_i^n E[X_i^2] - \frac{1}{n^2} E\Biggl[\underbrace{\sum_i^nX_i^2}_{dependent} \cdot \underbrace{\sum_{i \neq j}^nX_i X_j}_{independent}\Biggr] \\
+&= \frac{1}{n} \sum_i^n E[X_i^2] - \frac{1}{n^2} E\Biggl[\underbrace{\sum_i^nX_i^2}_{dependent} + \underbrace{\sum_{i \neq j}^nX_i X_j}_{independent}\Biggr] \\
 &= \frac{1}{n} \sum_i^n E[X_i^2] - \frac{1}{n^2} \left( \sum_i^n E[X_i^2] + \sum_{i \neq j}^n E[X_i] E[X_j] \right)\\
 &= \frac{n}{n} E[X^2] - \frac{1}{n^2} \left( n E[X^2] + (n^2 - n) E[X] E[X] \right) \\
 &= \frac{n-1}{n} E[X^2] - \frac{n-1}{n} E[X]^2 \\
