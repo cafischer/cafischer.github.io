@@ -103,7 +103,7 @@ print('E[var]_sample corrected = %.2f' % np.mean(var_sample_corrected))
 
 
 # Proofs
-Sample: $$X_1, \dots X_n \overset{\text{i.i.d.}}{\sim} X$ where $E[X] = \mu, Var[X] = \sigma^2$$
+Sample: $$X_1, \dots X_n \overset{\text{i.i.d.}}{\sim} X$$ where $$E[X] = \mu, Var[X] = \sigma^2$$
 We will use $$Var[X] = E[X^2] - E[X]^2$$.
 Define the estimators
 $$\begin{align}
