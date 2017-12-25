@@ -38,17 +38,17 @@ print('std_population = %.2f' % std_pop)
 ```python
 n = 100
 nr_samples = 1000
-sides_sample_mat = np.zeros((nr_samples, n))
+sample_mat = np.zeros((nr_samples, n))
 for i in range(nr_samples):
-    sides_sample_mat[i] = sides[np.random.randint(0, len(sides), n)]
+    sample_mat[i] = sides[np.random.randint(0, len(sides), n)]
 ```
 
 ## Compute the mean and variance for each sample with and without correction
 
 ```python
-mu_sample = np.mean(sides_sample_mat, 1)
-var_sample = np.sum((sides_sample_mat - np.repeat(np.array([mu_sample]).T, n, 1))**2, 1) / n
-var_sample_corrected = np.sum((sides_sample_mat - np.repeat(np.array([mu_sample]).T, n, 1))**2, 1) / n * (n / (n-1))
+mu_sample = np.mean(sample_mat, 1)
+var_sample = np.sum((sample_mat - np.repeat(np.array([mu_sample]).T, n, 1))**2, 1) / n
+var_sample_corrected = np.sum((sample_mat - np.repeat(np.array([mu_sample]).T, n, 1))**2, 1) / n * (n / (n-1))
 ```
 
 ## Histogram of the means
