@@ -66,8 +66,7 @@ print('mu = %.2f' % mu_pop)
 print('E[mu] sample = %.2f' % np.mean(mu_sample))
 ```
 
-
-![png](output_9_0.png)
+![png]({{ site.url }}{{ site.baseurl }}/images/Bessel-Correction/hist_means.png)
 
 
     mu = 3.50
@@ -94,7 +93,7 @@ print('E[var]_sample corrected = %.2f' % np.mean(var_sample_corrected))
 ```
 
 
-![png](output_11_0.png)
+![png]({{ site.url }}{{ site.baseurl }}/images/Bessel-Correction/hist_variances.png)
 
 
     var_population = 2.92
