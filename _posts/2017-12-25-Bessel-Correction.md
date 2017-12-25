@@ -107,7 +107,7 @@ We will use $$Var[X] = E[X^2] - E[X]^2$$.
 Define the estimators
 $$\begin{align}
 	\hat{\mu} &= \frac1n \sum_{i=1}^n X_i \\
-	\hat{\sigma}^2 &= \frac{1}{n} \sum_i^n{X_i^2} - \left(\frac{1}{n} \sum_i^n X_i \right)^2
+	\hat{\sigma}^2 &= \frac{1}{n} \sum_{i=1}^n{X_i^2} - \left(\frac{1}{n} \sum_{i=1}^n X_i \right)^2
 \end{align}$$
 
 ## Proof 1: $$E[\hat{\mu}] = \mu$$
@@ -117,10 +117,10 @@ $$\begin{align}
 
 ## Proof 2: $$E[\hat{\sigma^2}] = \frac{n}{n-1} \sigma^2$$
 $$\begin{align}
-E[\hat{\sigma}^2] &= E\left[\frac{1}{n} \sum_i^n{X_i^2} - \left(\frac{1}{n} \sum_i^nX_i \right)^2\right] \\
-&= \frac{1}{n} \sum_i^n E[X_i^2] - \frac{1}{n^2} E\left[\sum_i^nX_i \cdot \sum_j^nX_j\right] \\
-&= \frac{1}{n} \sum_i^n E[X_i^2] - \frac{1}{n^2} E\Biggl[\underbrace{\sum_i^nX_i^2}_{dependent} + \underbrace{\sum_{i \neq j}^nX_i X_j}_{independent}\Biggr] \\
-&= \frac{1}{n} \sum_i^n E[X_i^2] - \frac{1}{n^2} \left( \sum_i^n E[X_i^2] + \sum_{i \neq j}^n E[X_i] E[X_j] \right)\\
+E[\hat{\sigma}^2] &= E\left[\frac{1}{n} \sum_{i=1}^n{X_i^2} - \left(\frac{1}{n} \sum_{i=1}^nX_i \right)^2\right] \\
+&= \frac{1}{n} \sum_{i=1}^n E[X_i^2] - \frac{1}{n^2} E\left[\sum_{i=1}^nX_i \cdot \sum_{j=1}^nX_j\right] \\
+&= \frac{1}{n} \sum_{i=1}^n E[X_i^2] - \frac{1}{n^2} E\Biggl[\underbrace{\sum_{i=1}^nX_i^2}_{dependent} + \underbrace{\sum_{i \neq j}^nX_i X_j}_{independent}\Biggr] \\
+&= \frac{1}{n} \sum_{i=1}^n E[X_i^2] - \frac{1}{n^2} \left( \sum_{i=1}^n E[X_i^2] + \sum_{i \neq j}^n E[X_i] E[X_j] \right)\\
 &= \frac{n}{n} E[X^2] - \frac{1}{n^2} \left( n E[X^2] + (n^2 - n) E[X] E[X] \right) \\
 &= \frac{n-1}{n} E[X^2] - \frac{n-1}{n} E[X]^2 \\
 &= \frac{n-1}{n} (\sigma^2 + \mu^2) - \frac{n-1}{n} \mu^2 \\
@@ -128,11 +128,11 @@ E[\hat{\sigma}^2] &= E\left[\frac{1}{n} \sum_i^n{X_i^2} - \left(\frac{1}{n} \sum
 \sigma^2 &= \frac{n}{n-1} E[\hat{\sigma}^2]
 \end{align}$$
 
-## Proof 3: $$\mu = \frac{1}{n} \sum_i^n{X_i} \iff \min\limits_{\mu} \left(\frac{1}{n} \sum_i^n{(X_i - \mu)^2}\right)$$
+## Proof 3: $$\mu = \frac{1}{n} \sum_{i=1}^n{X_i} \iff \min\limits_{\mu} \left(\frac{1}{n} \sum_{i=1}^n{(X_i - \mu)^2}\right)$$
 $$\begin{align}
-	\min\limits_{\mu} \left(\frac{1}{n} \sum_i^n{(X_i - \mu)^2}\right) & \\
-	\frac{\delta}{\delta\mu} \left(\frac{1}{n} \sum_i^n{(X_i - \mu)^2}\right) &= 0 \\
-	\frac{1}{n} \sum_i^n{2(X_i - \mu)\cdot -1} &= 0 \\
-	-2\sum_i^n{X_i} + 2N\mu &= 0 \\
-	\mu &= \frac{1}{n} \sum_i^n{X_i}
+	\min\limits_{\mu} \left(\frac{1}{n} \sum_{i=1}^n{(X_i - \mu)^2}\right) & \\
+	\frac{\delta}{\delta\mu} \left(\frac{1}{n} \sum_{i=1}^n{(X_i - \mu)^2}\right) &= 0 \\
+	\frac{1}{n} \sum_{i=1}^n{2(X_i - \mu)\cdot -1} &= 0 \\
+	-2\sum_{i=1}^n{X_i} + 2N\mu &= 0 \\
+	\mu &= \frac{1}{n} \sum_{i=1}^n{X_i}
 \end{align}$$
