@@ -56,21 +56,21 @@ var_sample_corrected = np.sum((sample_mat - np.repeat(np.array([mu_sample]).T, n
 ```python
 plt.figure()
 plt.hist(mu_sample, bins=40)
-plt.gca().axvline(np.mean(mu_sample), color='red', linewidth=2.0, label='mu population')
-plt.gca().axvline(mu_pop, linestyle='--', color='darkblue', linewidth=2.0, label='E[mu] sample')
+plt.gca().axvline(np.mean(mu_sample), color='red', linewidth=2.0, label='mu_population')
+plt.gca().axvline(mu_pop, linestyle='--', color='darkblue', linewidth=2.0, label='E[mu]_sample')
 plt.xlabel('Mu Sample')
 plt.ylabel('Count')
 plt.legend()
 plt.show()
-print('mu = %.2f' % mu_pop)
-print('E[mu] sample = %.2f' % np.mean(mu_sample))
+print('mu_population = %.2f' % mu_pop)
+print('E[mu]_sample = %.2f' % np.mean(mu_sample))
 ```
 
 ![png]({{ site.url }}{{ site.baseurl }}/images/Bessel-Correction/hist_means.png)
 
 
-    mu = 3.50
-    E[mu] sample = 3.50
+    mu_population = 3.50
+    E[mu]_sample = 3.50
 
 
 ## Histogram of the variances
