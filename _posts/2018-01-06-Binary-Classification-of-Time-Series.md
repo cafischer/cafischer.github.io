@@ -34,7 +34,7 @@ sc = SparkContext("local", "App")
 np.random.seed(1)
 ```
 
-![png]({{ site.url }}{{ site.baseurl }}/images/Binary-Classification-of-Timeseries/general_setup.png)
+![png]({{ site.url }}{{ site.baseurl }}/images/Binary-Classification-of-Time-Series/general_setup.png)
 **Figure 1:** General Setup: Extracting statistical features from time series data for classification.
 
 ## Create Train and Test Data
@@ -119,8 +119,8 @@ plot_data(train_data, 'Train data')
 plot_data(test_data, 'Test data')
 ```
 
-![png]({{ site.url }}{{ site.baseurl }}/images/Binary-Classification-of-Timeseries/train_data.png)
-![png]({{ site.url }}{{ site.baseurl }}/images/Binary-Classification-of-Timeseries/test_data.png)
+![png]({{ site.url }}{{ site.baseurl }}/images/Binary-Classification-of-Time-Series/train_data.png)
+![png]({{ site.url }}{{ site.baseurl }}/images/Binary-Classification-of-Time-Series/test_data.png)
 
 By eye it is quite difficult to classify all time series into the two classes.
 
@@ -562,8 +562,8 @@ plot_feature(train_features, train_labels, i_column, 'Train Data')
 plot_feature(test_features, test_labels, i_column, 'Test Data')
 ```
 
-![png]({{ site.url }}{{ site.baseurl }}/images/Binary-Classification-of-Timeseries/feature_train.png)
-![png]({{ site.url }}{{ site.baseurl }}/images/Binary-Classification-of-Timeseries/feature_test.png)
+![png]({{ site.url }}{{ site.baseurl }}/images/Binary-Classification-of-Time-Series/feature_train.png)
+![png]({{ site.url }}{{ site.baseurl }}/images/Binary-Classification-of-Time-Series/feature_test.png)
 
 For the classification we need to add the class in front of each sample. Furthermore we should make sure that the columns of the train and test set are in the same order. In the end we save both as csv file.
 
@@ -707,12 +707,12 @@ So the decision rule makes sense because the feature is essentially the slope of
 To apply the previous methods to this problem we only need to bring the data into the right format for the feature extraction and then do the same as above. 
 Since we want to check for shutdowns continuously, we can use a sliding window approach. 
 
-![png]({{ site.url }}{{ site.baseurl }}/images/Binary-Classification-of-Timeseries/time_series.png)
+![png]({{ site.url }}{{ site.baseurl }}/images/Binary-Classification-of-Time-Series/time_series.png)
 
 We stop for instance every half an hour (*= &Delta; window*) to make a prediction using the data from some hours ago up to this time point (*= window size*). The sample is assigned to class 1 (shutdown will happen) if a shutdown occurs in the next hour (*= &Delta; prediction*) and to class 0 (no shutdown will happen) otherwise.
  Having this division we can start the feature extraction and classification.
 
-![png]({{ site.url }}{{ site.baseurl }}/images/Binary-Classification-of-Timeseries/sliding_window.png)
+![png]({{ site.url }}{{ site.baseurl }}/images/Binary-Classification-of-Time-Series/sliding_window.png)
 
 ## Summary
 In this post you learned how to do binary classification of time series in Python using the package TSFRESH and pyspark. It involved basically three steps:
