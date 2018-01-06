@@ -584,8 +584,8 @@ test_features.to_csv('./test_set.csv')
 ```
 
 ## Classification
-We will do the classification with pyspark. For this reason we read the csv file with $SparkContext.textFile$ which returns a Resilient Distributed Dataset (Sparks abstraction of a dataset).
-After we removed the header, each sample is transformed to a $LabeledPoint$, an object containing the class and feature vector. 
+We will do the classification with pyspark. For this reason we read the csv file with *SparkContext.textFile* which returns a Resilient Distributed Dataset (Sparks abstraction of a dataset).
+After we removed the header, each sample is transformed to a *LabeledPoint*, an object containing the class and feature vector. 
 
 
 ```python
