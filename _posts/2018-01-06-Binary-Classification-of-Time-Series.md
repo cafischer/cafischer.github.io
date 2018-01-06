@@ -42,11 +42,11 @@ To use time series for feature extraction with TSFRESH we need to bring the data
 
 index | id | timeseries type 1 | timeseries type 2 
 :---- | :-: | :--------------: | :---------------:
-0 | 1 | 0.10 | 12 
-1 | 1 | 0.24 | 3 
-2 | 1 | 0.31 | 2 
-3 | 2 | 0.29 | 6 
-4 | 2 | 0.32 | 5 
+0 | 1 | 0.10 | 12  
+1 | 1 | 0.24 | 3  
+2 | 1 | 0.31 | 2  
+3 | 2 | 0.29 | 6   
+4 | 2 | 0.32 | 5  
 5 | 2 | 0.33 | 5  
 **Table 1: ** Format of the time series data (pandas DataFrame).
 
@@ -615,7 +615,7 @@ model = DecisionTree.trainClassifier(train_set, numClasses=2, categoricalFeature
 For the evaluation we will use the following confusion matrix: 
 
 
-   |     Class 1 True     |   Class 0 True   |  
+                      |     Class 1 True     |   Class 0 True   |  
 :-------------------: | :------------: | :-----------------------: | :---------:  
 **Class 1 Predicted** | True Positive  |       False Negative      | Recall  
 **Class 0 Predicted** | False Positive |       True Negative       | Specificity  
