@@ -615,11 +615,11 @@ model = DecisionTree.trainClassifier(train_set, numClasses=2, categoricalFeature
 For the evaluation we will use the following confusion matrix: 
 
 
-                      |     Class 1 True     |   Class 0 True   |  
-:-------------------: | :------------: | :-----------------------: | :---------:  
-**Class 1 Predicted** | True Positive  |       False Negative      | Recall  
-**Class 0 Predicted** | False Positive |       True Negative       | Specificity  
-                      |   Precision    | Negative Predictive Value | Accuracy  
+|                       |  Class 1 True  |        Class 0 True       |             |
+|:---------------------:|:--------------:|:-------------------------:|-------------|
+| **Class 1 Predicted** |  True Positive |       False Negative      | Recall      |
+| **Class 0 Predicted** | False Positive |       True Negative       | Specificity |
+|                       |    Precision   | Negative Predictive Value | Accuracy    |
                   
 
 
