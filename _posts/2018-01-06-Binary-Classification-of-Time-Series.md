@@ -661,16 +661,16 @@ label_and_prediction = test_set.map(lambda lp: lp.label).zip(predictions)
 print('Confusion Matrix Testing: \n' + str(np.matrix((compute_confusion_matrix(label_and_prediction)))))
 ```
 
-Training | 1 True | 0 True | 
+Training | Class 1 True | Class 0 True | 
 :------: | :----: | :----: |
-**1 Predicted** | 20 | 4 | 0.83  
-**0 Predicted** | 1 | 16 | 1.00  
+**Class 1 Predicted** | 20 | 4 | 0.83  
+**Class 0 Predicted** | 1 | 16 | 1.00  
  | 1.00 | 0.80 | 0.90
  
-Testing | 1 True | 0 True |
+Testing | Class 1 True | Class 0 True |
 :-----: | :----: | :----: |
-**1 Predicted** | 19 | 1 | 0.95
-**0 Predicted** | 1 | 19 | 0.95  
+**Class 1 Predicted** | 19 | 1 | 0.95
+**Class 0 Predicted** | 1 | 19 | 0.95  
  | 0.95 | 0.95 | 0.95
  
 We see that the performance of the model is quite good on the train and on the test set with an accuracy of 0.9 and 0.95, respectively. For an even distribution of classes in a data set, the accuracy is the decisive factor. For skewed data sets as in the following shutdown prediction example precision and recall are very important as well.
