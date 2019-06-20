@@ -24,7 +24,7 @@ $$ \begin{equation}
 \end{equation} $$  
 Insert (1) in (2):  
 $$ \begin{equation}
-\frac{\delta \phi}{\delta t} = 2 \pi \cdot f_0 + \frac{f_1 - f_0}{T} \cdot t \tag{3}
+\frac{\delta \phi}{\delta t} = 2 \pi \cdot (f_0 + \frac{f_1 - f_0}{T} \cdot t) \tag{3}
 \end{equation} $$  
 Integrate:  
 $$ \begin{equation}
